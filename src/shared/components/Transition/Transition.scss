@@ -1,0 +1,71 @@
+@import 'shared/styles/styles.scss';
+
+// type -- opacity --
+.opacity-enter {
+  opacity: 0;
+}
+
+.opacity-enter-active {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.opacity-enter-done {
+  width: 100%;
+}
+
+.opacity-exit {
+  opacity: 1;
+}
+
+.opacity-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+// type -- transform --
+.transform-enter {
+  transform: translateX(-101%);
+}
+
+.transform-enter-active {
+  transform: translateX(0%);
+  transition: transform 500ms ease-in-out;
+}
+
+.transform-enter-done {
+  width: 100%;
+}
+
+.transform-exit {
+  transform: translateX(0%);
+}
+
+.transform-exit-active {
+  transform: translateX(101%);
+  transition: transform 500ms ease-in-out;
+}
+
+// type -- scale --
+.scale-enter {
+  transform: scale(0);
+}
+
+.scale-enter-active {
+  transform: scale(1);
+  transition: scale 500ms ease-in-out;
+}
+
+.scale-enter-done {
+  width: 100%;
+}
+
+.scale-exit {
+  transform: scale(1);
+}
+
+.scale-exit-active {
+  transform: scale(0);
+  transition: transform 500ms ease-in-out;
+}

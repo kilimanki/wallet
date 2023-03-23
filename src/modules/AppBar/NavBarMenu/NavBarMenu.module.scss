@@ -1,0 +1,37 @@
+@import 'shared/styles/styles.scss';
+
+.list {
+  @include second-font(400, 18px, 27px);
+
+  width: 130px;
+  margin-bottom: 28px;
+}
+
+.link:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.linkWrapper {
+  display: flex;
+  align-items: center;
+
+  :global {
+    .active {
+      font-weight: 700;
+
+      & svg {
+        fill: rgba(74, 86, 226, 1);
+        filter: drop-shadow(0px 3px 10px rgba(74, 86, 226, 0.5));
+      }
+    }
+  }
+
+  & a {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.svg {
+  margin-right: 23px;
+}

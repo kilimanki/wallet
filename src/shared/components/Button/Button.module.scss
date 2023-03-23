@@ -1,0 +1,21 @@
+@import 'shared/styles/styles.scss';
+
+.btn-auth {
+  @include main-font(400, 18px, 27px, 0.1em);
+  text-transform: uppercase;
+
+  height: 50px;
+  width: 280px;
+
+  border: none;
+  border-radius: 20px;
+  margin-top: 40px;
+  background-color: #24cca7;
+  color: white;
+
+  cursor: pointer;
+
+  @include media-min(tablet) {
+    width: 300px;
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../../shared/styles/styles.scss';
+
+.balance {
+  @include flexed(center, flex-start);
+  flex-direction: column;
+
+  width: 280px;
+  height: 80px;
+
+  background: #ffffff;
+  border-radius: 30px;
+
+  padding-left: 30px;
+  padding-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-min(tablet) {
+    width: 336px;
+  }
+  @include media-min(desktop) {
+    width: 395px;
+  }
+}
+
+.title {
+  @include main-font(400, 12px, 18px);
+
+  text-transform: uppercase;
+  color: #a6a6a6;
+}
+
+.amount {
+  @include second-font(700, 30px, 45px);
+}
+
+.currency {
+  @include second-font(400, 30px, 45px);
+}
